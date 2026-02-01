@@ -51,6 +51,13 @@
 	},
 
 	{
+		path: '/order-product-management',
+		name: 'Order & Product Management',
+		icon: 'ShoppingOutlined',
+		component: './OrderProductManagement',
+	},
+
+	{
 		path: '/notification',
 		routes: [
 			{
