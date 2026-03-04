@@ -43,19 +43,31 @@
 		component: './TodoList',
 	},
 
-	// DANH MUC HE THONG
-	// {
-	// 	name: 'DanhMuc',
-	// 	path: '/danh-muc',
-	// 	icon: 'copy',
-	// 	routes: [
-	// 		{
-	// 			name: 'ChucVu',
-	// 			path: 'chuc-vu',
-	// 			component: './DanhMuc/ChucVu',
-	// 		},
-	// 	],
-	// },
+	{
+		path: '/danh-muc-san-pham',
+		name: 'Danh mục sản phẩm',
+		icon: 'OrderedListOutlined',
+		component: './DanhMucSanPham',
+	},
+
+	{
+		path: '/order-product-management',
+		name: 'Order & Product Management',
+		icon: 'ShoppingOutlined',
+		component: './OrderProductManagement',
+	},
+	{
+		path: '/guess-number-game',
+		name: 'Trò chơi đoán số',
+		icon: 'QuestionCircleOutlined',
+		component: './GuessNumberGame',
+	},
+	{
+		path: '/study-tracking',
+		name: 'Quản lý học tập',
+		icon: 'BookOutlined',
+		component: './StudyTracking',
+	},
 
 	{
 		path: '/notification',
