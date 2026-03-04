@@ -56,6 +56,18 @@
 		icon: 'ShoppingOutlined',
 		component: './OrderProductManagement',
 	},
+	{
+		path: '/guess-number-game',
+		name: 'Trò chơi đoán số',
+		icon: 'QuestionCircleOutlined',
+		component: './GuessNumberGame',
+	},
+	{
+		path: '/study-tracking',
+		name: 'Quản lý học tập',
+		icon: 'BookOutlined',
+		component: './StudyTracking',
+	},
 
 	{
 		path: '/notification',

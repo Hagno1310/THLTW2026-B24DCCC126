@@ -1,0 +1,74 @@
+@import '~antd/es/style/themes/default.less';
+@import '../../styles/_variable.less';
+
+.game-container {
+	max-width: 500px;
+	margin: 24px auto;
+
+	.ant-card-head-title {
+		font-weight: 600;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.status-box {
+		margin-bottom: 24px;
+		padding: 24px;
+		text-align: center;
+		background-color: var(--primary-1);
+		border: 1px solid var(--primary-2);
+		border-radius: @border-radius;
+
+		.message {
+			margin-bottom: 8px;
+			color: var(--primary-color);
+			font-weight: 600;
+			font-size: 1.25rem;
+		}
+
+		.attempts {
+			color: @text-color-secondary;
+			span {
+				color: var(--ant-error-color);
+				font-weight: bold;
+			}
+		}
+	}
+
+	.input-group {
+		display: flex;
+		gap: 12px;
+		justify-content: center;
+		margin-bottom: 24px;
+
+		.ant-input-number {
+			width: 120px;
+			.ant-input-number-input {
+				height: 40px;
+				font-size: 1.2rem;
+				text-align: center;
+			}
+		}
+
+		.ant-btn {
+			height: 44px;
+			padding: 0 32px;
+			font-weight: 600;
+		}
+	}
+
+	.history {
+		text-align: center;
+		.label {
+			margin-bottom: 12px;
+			color: @text-color-secondary;
+			font-size: 0.9rem;
+		}
+		.tags-container {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+			justify-content: center;
+		}
+	}
+}

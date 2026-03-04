@@ -1,0 +1,104 @@
+@import '~antd/es/style/themes/default.less';
+@import '../../styles/_variable.less';
+
+.study-tracking-container {
+	min-height: 100%;
+	padding: 24px;
+	background-color: #fff;
+	border-radius: @border-radius;
+
+	.header-section {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 24px;
+
+		h2 {
+			margin-bottom: 0;
+			color: var(--primary-color);
+		}
+	}
+
+	.ant-tabs-nav {
+		margin-bottom: 24px;
+	}
+
+	.stat-card {
+		margin-bottom: 24px;
+		background-color: var(--primary-1);
+		border: 1px solid var(--primary-2);
+
+		.stat-content {
+			padding: 8px;
+
+			.stat-label {
+				margin-bottom: 4px;
+				color: @text-color-secondary;
+				font-size: 14px;
+			}
+
+			.stat-value {
+				display: flex;
+				align-items: center;
+				font-weight: bold;
+				font-size: 24px;
+
+				.anticon {
+					margin-right: 8px;
+					color: var(--primary-color);
+				}
+
+				.stat-unit {
+					margin-left: 4px;
+					font-weight: normal;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	.progress-section {
+		margin-bottom: 24px;
+
+		.progress-header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 16px;
+
+			h4 {
+				margin: 0 !important;
+			}
+		}
+
+		.progress-item {
+			display: block;
+			padding: 8px 0;
+			border-bottom: none;
+
+			.progress-info {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 8px;
+			}
+		}
+	}
+}
+
+.subject-manager {
+	.subject-list {
+		margin-top: 16px;
+	}
+}
+
+.log-form {
+	.ant-form-item {
+		margin-bottom: 16px !important;
+	}
+}
+
+.study-log {
+	.ant-btn-primary {
+		margin-bottom: 16px;
+	}
+}
