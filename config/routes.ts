@@ -68,7 +68,34 @@
 		icon: 'BookOutlined',
 		component: './StudyTracking',
 	},
-
+	{
+		path: '/rock-paper-scissors',
+		name: 'Trò chơi Oẳn Tù Tì',
+		icon: 'ThunderboltOutlined',
+		component: './RockPaperScissors',
+	},
+	{
+		path: '/ngan-hang-cau-hoi',
+		name: 'Ngân hàng câu hỏi',
+		icon: 'DatabaseOutlined',
+		routes: [
+			{
+				path: '/ngan-hang-cau-hoi/danh-muc',
+				name: 'Danh mục',
+				component: './NganHangCauHoi/DanhMuc',
+			},
+			{
+				path: '/ngan-hang-cau-hoi/cau-hoi',
+				name: 'Câu hỏi',
+				component: './NganHangCauHoi/CauHoi',
+			},
+			{
+				path: '/ngan-hang-cau-hoi/de-thi',
+				name: 'Đề thi',
+				component: './NganHangCauHoi/DeThi',
+			},
+		],
+	},
 	{
 		path: '/notification',
 		routes: [
