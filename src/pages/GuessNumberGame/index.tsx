@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Card, InputNumber, Button, Tag, Typography } from 'antd';
+import { Card, InputNumber, Button, Tag } from 'antd';
 import ResultModal from './components/ResultModal';
 import './style.less';
-
-const { Title, Text } = Typography;
 
 const GuessNumberGame: React.FC = () => {
 	const [targetNumber, setTargetNumber] = useState<number>(0);
