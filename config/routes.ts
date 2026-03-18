@@ -69,6 +69,38 @@
 		component: './StudyTracking',
 	},
 	{
+		path: '/booking-system',
+		name: 'Booking System',
+		icon: 'ScheduleOutlined',
+		routes: [
+			{
+				path: '/booking-system/employees',
+				name: 'Employees',
+				component: './BookingSystem/EmployeeManagement',
+			},
+			{
+				path: '/booking-system/services',
+				name: 'Services',
+				component: './BookingSystem/ServiceManagement',
+			},
+			{
+				path: '/booking-system/appointments',
+				name: 'Appointments',
+				component: './BookingSystem/AppointmentBooking',
+			},
+			{
+				path: '/booking-system/reviews',
+				name: 'Reviews',
+				component: './BookingSystem/ReviewManagement',
+			},
+			{
+				path: '/booking-system/statistics',
+				name: 'Statistics',
+				component: './BookingSystem/Statistics',
+			},
+		],
+	},
+	{
 		path: '/rock-paper-scissors',
 		name: 'Trò chơi Oẳn Tù Tì',
 		icon: 'ThunderboltOutlined',
