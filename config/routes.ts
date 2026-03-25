@@ -154,6 +154,38 @@
 		path: '/',
 	},
 	{
+		path: '/van-bang',
+		name: 'Quản lý Văn bằng',
+		icon: 'SolutionOutlined',
+		routes: [
+			{
+				path: '/van-bang/tra-cuu',
+				name: 'Tra cứu văn bằng',
+				component: './VanBang/TraCuu',
+			},
+			{
+				path: '/van-bang/cau-hinh',
+				name: 'Cấu hình biểu mẫu',
+				component: './VanBang/CauHinh',
+			},
+			{
+				path: '/van-bang/so-van-bang',
+				name: 'Sổ văn bằng',
+				component: './VanBang/SoVanBang',
+			},
+			{
+				path: '/van-bang/quyet-dinh',
+				name: 'Quyết định tốt nghiệp',
+				component: './VanBang/QuyetDinh',
+			},
+			{
+				path: '/van-bang/thong-tin',
+				name: 'Thông tin văn bằng',
+				component: './VanBang/ThongTin',
+			},
+		],
+	},
+	{
 		path: '/403',
 		component: './exception/403/403Page',
 		layout: false,

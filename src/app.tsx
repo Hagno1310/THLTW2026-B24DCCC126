@@ -17,6 +17,8 @@ import type { IInitialState } from './services/base/typing';
 import './styles/global.less';
 import { currentRole } from './utils/ip';
 
+import { initVanBangMockData } from './utils/initMockData';
+
 /**  loading */
 export const initialStateConfig = {
 	loading: <></>,
@@ -27,6 +29,7 @@ export const initialStateConfig = {
  * // Tobe removed
  * */
 export async function getInitialState(): Promise<IInitialState> {
+	initVanBangMockData();
 	return {
 		permissionLoading: true,
 	};
