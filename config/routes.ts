@@ -69,6 +69,38 @@
 		component: './StudyTracking',
 	},
 	{
+		path: '/club-management',
+		name: 'Quản lý câu lạc bộ',
+		icon: 'TeamOutlined',
+		routes: [
+			{
+				path: '/club-management/list',
+				name: 'Danh sách câu lạc bộ',
+				component: './ClubManagement',
+			},
+			{
+				path: '/club-management/registrations',
+				name: 'Quản lý đơn đăng ký',
+				component: './RegistrationManagement',
+			},
+			{
+				path: '/club-management/members',
+				name: 'Quản lý thành viên',
+				component: './MemberManagement',
+			},
+			{
+				path: '/club-management/reports',
+				name: 'Báo cáo thống kê',
+				component: './ClubReports',
+			},
+		],
+	},
+	{
+		path: '/club-members',
+		component: './MemberManagement',
+		hideInMenu: true,
+	},
+	{
 		path: '/booking-system',
 		name: 'Booking System',
 		icon: 'ScheduleOutlined',

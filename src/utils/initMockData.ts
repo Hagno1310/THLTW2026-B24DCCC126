@@ -1,3 +1,5 @@
+export * from './initClubMockData';
+
 export const initVanBangMockData = () => {
 	const keys = {
 		cauhinh: 'vb_local_cau-hinh',
