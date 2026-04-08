@@ -1,0 +1,76 @@
+@import '~antd/es/style/themes/default.less';
+@import '../../../styles/_variable.less';
+
+.explore-container {
+	min-height: 100%;
+	padding: 24px;
+	background-color: #fff;
+	border-radius: @border-radius;
+
+	.header-section {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 24px;
+
+		h2 {
+			margin: 0;
+		}
+	}
+
+	.filter-bar {
+		margin-bottom: 24px;
+		padding: 16px;
+		background: #fafafa;
+		border-radius: 8px;
+
+		.ant-select,
+		.ant-slider,
+		.ant-rate {
+			width: 100%;
+		}
+	}
+
+	.destination-card {
+		margin-bottom: 16px;
+		overflow: hidden;
+		border-radius: 8px;
+		transition: transform 0.2s, box-shadow 0.2s;
+
+		&:hover {
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+			transform: translateY(-4px);
+		}
+
+		.ant-card-cover img {
+			height: 200px;
+			object-fit: cover;
+		}
+
+		.card-meta {
+			.location {
+				margin-bottom: 4px;
+				color: #888;
+				font-size: 13px;
+			}
+
+			.cost {
+				margin-top: 8px;
+				color: #f5222d;
+				font-weight: 600;
+				font-size: 16px;
+			}
+
+			.rating-row {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-top: 8px;
+			}
+		}
+	}
+
+	.mobile-filter-collapse {
+		margin-bottom: 16px;
+	}
+}

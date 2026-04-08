@@ -1,0 +1,72 @@
+@import '~antd/es/style/themes/default.less';
+@import '../../../styles/_variable.less';
+
+.admin-container {
+	min-height: 100%;
+	padding: 24px;
+	background-color: #fff;
+	border-radius: @border-radius;
+
+	.header-section {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 24px;
+
+		h2 {
+			margin: 0;
+		}
+	}
+
+	.stat-cards {
+		margin-bottom: 24px;
+	}
+
+	.chart-row {
+		margin-bottom: 24px;
+	}
+}
+
+.dest-modal {
+	.modal-image-preview {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 180px;
+		overflow: hidden;
+		background: #fafafa;
+		border: 1px solid #f0f0f0;
+		border-radius: 8px;
+	}
+
+	.modal-image-placeholder {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+	}
+
+	.ant-divider-inner-text {
+		color: #1890ff;
+		font-weight: 600;
+		font-size: 14px;
+	}
+
+	.ant-form-item {
+		margin-bottom: 14px;
+	}
+
+	.ant-form-item-label > label {
+		color: #595959;
+		font-weight: 500;
+	}
+
+	.ant-input-number-group-addon {
+		color: #8c8c8c;
+		font-size: 13px;
+		background: #fafafa;
+	}
+}

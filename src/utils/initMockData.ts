@@ -1,4 +1,5 @@
 export * from './initClubMockData';
+export { initTravelPlanningMockData } from '../services/TravelPlanning/data';
 
 export const initVanBangMockData = () => {
 	const keys = {

@@ -133,6 +133,33 @@
 		],
 	},
 	{
+		path: '/travel-planning',
+		name: 'Lập kế hoạch du lịch',
+		icon: 'CompassOutlined',
+		routes: [
+			{
+				path: '/travel-planning/explore',
+				name: 'Khám phá điểm đến',
+				component: './TravelPlanning/ExploreDestinations',
+			},
+			{
+				path: '/travel-planning/create',
+				name: 'Tạo lịch trình',
+				component: './TravelPlanning/CreateItinerary',
+			},
+			{
+				path: '/travel-planning/budget',
+				name: 'Quản lý ngân sách',
+				component: './TravelPlanning/BudgetManagement',
+			},
+			{
+				path: '/travel-planning/admin',
+				name: 'Quản trị',
+				component: './TravelPlanning/AdminDashboard',
+			},
+		],
+	},
+	{
 		path: '/rock-paper-scissors',
 		name: 'Trò chơi Oẳn Tù Tì',
 		icon: 'ThunderboltOutlined',

@@ -1,0 +1,14 @@
+{
+	"permissions": {
+		"allow": [
+			"Bash(cd D:/Learn/Web/13_01_2025/baseltw && npx umi build 2>&1 | head -50)",
+			"Bash(cd D:/Learn/Web/13_01_2025/baseltw && npx tsc --noEmit --skipLibCheck 2>&1 | head -60)",
+			"WebFetch(domain:en.wikipedia.org)",
+			"Bash(curl -s -H \"User-Agent: TravelApp/1.0\" \"https://en.wikipedia.org/w/api.php?action=query&titles=Phu_Quoc|Nha_Trang|Da_Nang|Quy_Nhon|Sa_Pa|Da_Lat&prop=pageimages&pithumbsize=400&format=json\" 2>&1)",
+			"Bash(curl -s -H \"User-Agent: TravelApp/1.0\" \"https://en.wikipedia.org/w/api.php?action=query&titles=Ha_Giang|Tam_%C4%90%E1%BA%A3o_town|Hanoi|Ho_Chi_Minh_City|Hu%E1%BA%BF|Hoi_An&prop=pageimages&pithumbsize=400&format=json\" 2>&1)",
+			"Bash(curl -s -H \"User-Agent: TravelApp/1.0\" \"https://en.wikipedia.org/w/api.php?action=query&titles=Ph%C3%BA_Qu%E1%BB%91c|H%C3%A0_Giang_province|H%E1%BB%99i_An|Tam_Dao&prop=pageimages&pithumbsize=400&format=json\" 2>&1)",
+			"Bash(curl -s -H \"User-Agent: TravelApp/1.0\" \"https://en.wikipedia.org/w/api.php?action=query&titles=Hoi_An_Ancient_Town|Tam_%C4%90%E1%BA%A3o_District&prop=pageimages&pithumbsize=400&format=json\" 2>&1)",
+			"Bash(curl -s -H \"User-Agent: TravelApp/1.0\" \"https://commons.wikimedia.org/w/api.php?action=query&titles=File:H%E1%BB%99i_An,_Ancient_Town,_2020-01_CN-10.jpg&prop=imageinfo&iiprop=url&iiurlwidth=400&format=json\" 2>&1)"
+		]
+	}
+}
