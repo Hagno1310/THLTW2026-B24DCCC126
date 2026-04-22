@@ -1,0 +1,118 @@
+.pb-home {
+	padding: 16px;
+
+	&__header {
+		margin-bottom: 16px;
+
+		h1 {
+			margin-bottom: 4px;
+		}
+
+		p {
+			margin: 0;
+			color: rgba(0, 0, 0, 0.55);
+		}
+	}
+
+	&__toolbar {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+		align-items: center;
+		margin-bottom: 12px;
+
+		.ant-input-search {
+			max-width: 360px;
+		}
+	}
+
+	&__tag-row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6px;
+		margin-bottom: 16px;
+
+		.ant-tag {
+			padding: 4px 10px;
+			font-size: 13px;
+			cursor: pointer;
+		}
+	}
+
+	&__selected-chips {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6px;
+		margin-bottom: 12px;
+	}
+
+	&__empty {
+		padding: 48px 0;
+		color: rgba(0, 0, 0, 0.45);
+		text-align: center;
+	}
+
+	&__pagination {
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+	}
+}
+
+.pb-article-card {
+	height: 100%;
+
+	.ant-card-body {
+		padding: 16px;
+	}
+
+	&__cover {
+		overflow: hidden;
+		background: #f0f0f0;
+		aspect-ratio: 16 / 9;
+
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__tags {
+		margin-bottom: 8px;
+
+		.ant-tag {
+			color: #fff;
+			border: none;
+		}
+	}
+
+	&__title {
+		display: -webkit-box;
+		margin: 0 0 8px 0;
+		overflow: hidden;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 1.35;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+	}
+
+	&__summary {
+		display: -webkit-box;
+		margin: 0 0 12px 0;
+		overflow: hidden;
+		color: rgba(0, 0, 0, 0.65);
+		font-size: 14px;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+	}
+
+	&__meta {
+		display: flex;
+		gap: 6px;
+		color: rgba(0, 0, 0, 0.45);
+		font-size: 12px;
+	}
+}

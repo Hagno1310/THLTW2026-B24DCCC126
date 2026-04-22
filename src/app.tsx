@@ -18,6 +18,7 @@ import './styles/global.less';
 import { currentRole } from './utils/ip';
 
 import { initVanBangMockData, initClubMockData, initTravelPlanningMockData } from './utils/initMockData';
+import { initBlogMockData } from '@/services/PersonalBlog/data';
 
 /**  loading */
 export const initialStateConfig = {
@@ -32,6 +33,7 @@ export async function getInitialState(): Promise<IInitialState> {
 	initVanBangMockData();
 	initClubMockData();
 	initTravelPlanningMockData();
+	initBlogMockData();
 	return {
 		permissionLoading: true,
 	};
