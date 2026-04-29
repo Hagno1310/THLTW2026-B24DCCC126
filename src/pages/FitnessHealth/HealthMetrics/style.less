@@ -1,0 +1,34 @@
+@import '~antd/es/style/themes/default.less';
+
+.fh-health {
+	padding: 16px;
+
+	&__toolbar {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+		align-items: center;
+		margin-bottom: 16px;
+
+		h2 {
+			flex: 1;
+			min-width: 160px;
+			margin: 0;
+		}
+	}
+
+	&__bmi-cell {
+		display: flex;
+		gap: 8px;
+		align-items: center;
+
+		.ant-tag {
+			font-size: 12px;
+		}
+	}
+
+	.ant-table-wrapper {
+		overflow: hidden;
+		border-radius: 8px;
+	}
+}

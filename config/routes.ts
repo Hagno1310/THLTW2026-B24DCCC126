@@ -56,6 +56,19 @@
 		],
 	},
 	{
+		path: '/fitness-health',
+		name: 'Fitness & Health',
+		icon: 'HeartOutlined',
+		routes: [
+			{ path: '/fitness-health', redirect: '/fitness-health/dashboard' },
+			{ path: '/fitness-health/dashboard', name: 'Dashboard', component: './FitnessHealth/Dashboard' },
+			{ path: '/fitness-health/workouts', name: 'Workout Log', component: './FitnessHealth/WorkoutLog' },
+			{ path: '/fitness-health/health-metrics', name: 'Health Metrics', component: './FitnessHealth/HealthMetrics' },
+			{ path: '/fitness-health/goals', name: 'Goals', component: './FitnessHealth/GoalManagement' },
+			{ path: '/fitness-health/exercises', name: 'Exercise Library', component: './FitnessHealth/ExerciseLibrary' },
+		],
+	},
+	{
 		path: '/403',
 		component: './exception/403/403Page',
 		layout: false,

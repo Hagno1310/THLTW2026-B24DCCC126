@@ -1,0 +1,78 @@
+@import '~antd/es/style/themes/default.less';
+
+.fh-dashboard {
+	padding: 16px;
+
+	&__header {
+		margin-bottom: 20px;
+
+		h2 {
+			margin-bottom: 4px;
+		}
+
+		p {
+			margin: 0;
+			color: rgba(0, 0, 0, 0.55);
+		}
+	}
+
+	&__stat-row {
+		margin-bottom: 24px;
+
+		.ant-card {
+			border-radius: 8px;
+			transition: box-shadow 0.3s;
+
+			&:hover {
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+			}
+		}
+
+		.ant-statistic-title {
+			color: rgba(0, 0, 0, 0.55);
+			font-size: 13px;
+		}
+
+		.ant-statistic-content {
+			font-weight: 700;
+			font-size: 28px;
+		}
+	}
+
+	&__chart-row {
+		margin-bottom: 24px;
+
+		.ant-card {
+			border-radius: 8px;
+		}
+	}
+
+	&__timeline-card {
+		border-radius: 8px;
+
+		.ant-timeline {
+			padding-top: 8px;
+		}
+
+		.ant-timeline-item-content {
+			line-height: 1.6;
+		}
+	}
+
+	// colored stat icons
+	&__icon-workouts {
+		color: #1890ff;
+	}
+
+	&__icon-calories {
+		color: #fa541c;
+	}
+
+	&__icon-streak {
+		color: #faad14;
+	}
+
+	&__icon-goals {
+		color: #52c41a;
+	}
+}

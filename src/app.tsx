@@ -19,6 +19,7 @@ import { currentRole } from './utils/ip';
 
 import { initVanBangMockData, initClubMockData, initTravelPlanningMockData } from './utils/initMockData';
 import { initBlogMockData } from '@/services/PersonalBlog/data';
+import { initFitnessHealthMockData } from '@/services/FitnessHealth/data';
 
 /**  loading */
 export const initialStateConfig = {
@@ -34,6 +35,7 @@ export async function getInitialState(): Promise<IInitialState> {
 	initClubMockData();
 	initTravelPlanningMockData();
 	initBlogMockData();
+	initFitnessHealthMockData();
 	return {
 		permissionLoading: true,
 	};
