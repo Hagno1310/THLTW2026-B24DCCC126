@@ -56,6 +56,17 @@
 		],
 	},
 	{
+		path: '/task-tracking',
+		name: 'Task Tracking',
+		icon: 'ProjectOutlined',
+		routes: [
+			{ path: '/task-tracking', redirect: '/task-tracking/dashboard' },
+			{ path: '/task-tracking/dashboard', name: 'Dashboard', component: './TaskTracking/Dashboard' },
+			{ path: '/task-tracking/board', name: 'Kanban Board', component: './TaskTracking/Board' },
+			{ path: '/task-tracking/list', name: 'Task List', component: './TaskTracking/TaskList' },
+		],
+	},
+	{
 		path: '/fitness-health',
 		name: 'Fitness & Health',
 		icon: 'HeartOutlined',
